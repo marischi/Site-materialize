@@ -1,0 +1,40 @@
+.slider .slides li .caption, .textSlider
+{
+    color: black;
+    text-shadow: 1px 1px 5px black;
+}
+
+.slider .fullscreen
+{
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+.minhacor
+{
+    color:navy;
+}
+
+.slider .slides li .caption {
+    top: 15%;
+}
+
+.espacamentoSuperior
+{
+    margin-top: 95vh;
+}
+
+.equipe
+{
+    padding-bottom: 25px;
+}
+
+.card .card-image .card-title{
+    color: darkblue;
+    font-weight: 400;
+    text-shadow: white;
+}
