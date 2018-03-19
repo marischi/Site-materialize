@@ -1,0 +1,51 @@
+.slider .slides li .caption, .textSlider
+{
+    color: black;
+    text-shadow: 1px 1px 5px black;
+}
+
+.slider .fullscreen
+{
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+.minhacor
+{
+    color:navy;
+}
+
+.slider .slides li .caption {
+    top: 15%;
+}
+
+.espacamentoSuperior
+{
+    margin-top: 95vh;
+}
+
+.equipe, .contato
+{
+    padding-bottom: 25px;
+}
+
+.card .card-image .card-title{
+    color: darkblue;
+    font-weight: 400;
+    text-shadow: white;
+}
+
+.chip-custom
+{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.equipe, .servico, .localizacao, .contato, .rodape
+{
+    opacity: 0;
+}

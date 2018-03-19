@@ -23,29 +23,43 @@
             <li class="divider"></li>
             <li><a href="#!">Nossa Equipe</a></li>
         </ul>
-        <!-- NaveBar -->
-        <div class="navbar-fixed">
-        <nav class="#0288d1 light-blue darken-2">
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Materialize</a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <!-- Menu Padrão -->
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="inicio.html">Início</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="contato.html">Fale conosco</a></li>
-                    <!-- Dropdown Trigger -->
-                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Sobre Nós<i class="material-icons right">arrow_drop_down</i></a></li>
-                </ul>
-                <!-- Menu Mobile -->
-                <ul class="side-nav" id="mobile-demo">
-                    <li><a href="inicio.html">Início</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="contato.html">Fale conosco</a></li>
-                </ul>
-            </div>
-        </nav>
+        <!-- navbar -->
+    <div class="navbar-fixed">
+      <nav class="grey darken-4">
+        <div class="nav-wrapper">
+
+          <a href="index.html" class="brand-logo">MaterializeCSS</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+          <!-- menu -->
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#!" class="dropdown-button" data-activates="dropdown1">Quem Somos <i class="material-icons right">arrow_drop_down</i></a></li>
+
+            <li><a href="#" onclick="$('html,body').animate({scrollTop: $('.servico').offset().top-50}, 1000);">Serviços</a></li>
+            <li><a href="#" onclick="$('html,body').animate({scrollTop: $('.equipe').offset().top-50}, 1000);">Equipe</a></li>
+            <li><a href="#" onclick="$('html,body').animate({scrollTop: $('.localizacao').offset().top-50}, 1000);">localização</a></li>
+            <li><a href="#" onclick="$('html,body').animate({scrollTop: $('.contato').offset().top-50}, 1000);">Fale Conosco</a></li>
+          </ul>
+          <!-- ./menu -->
+
+          <!-- menu-mobile -->
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="#!">História</a></li>
+            <li><a href="#!">Missão</a></li>
+            <li><a href="#!">Presidente</a></li>
+            <li class="divider"></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="produtos.html">Serviços</a></li>
+            <li><a href="fale-conosco.html">Equipe</a></li>
+            <li><a href="fale-conosco.html">localização</a></li>
+            <li><a href="fale-conosco.html">Fale Conosco</a></li>
+          </ul>
+          <!-- ./menu-mobile -->
+
         </div>
+      </nav>
+    </div>
+    <!-- ./navbar -->
         
         <!-- Slider -->
         <div class="slider fullscreen">
@@ -82,7 +96,7 @@
         </div>
         
         <!-- Serviços -->
-        <section class="espacamentoSuperior">
+        <section class="espacamentoSuperior servico">
             <div class="container">
                 <div class="row">
                     <div class="col s12">
@@ -181,6 +195,109 @@
                 </div>
             </div>
         </section>
+        
+        <!-- Localização -->
+        <section class="localizacao">
+            <div class="container">
+                <div class="row">
+                    <h2 class="center-align">Localização</h2>
+                    <p class="flow-text center-align">Saiba onde estamos!</p>
+                </div>
+                <div class="row">
+                    <div class="col s12 m8">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112451.38014271873!2d-52.477753251760994!3d-28.264813744568993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e2bf7ecbc632df%3A0x8370fe5f60075c2b!2sPasso+Fundo%2C+RS!5e0!3m2!1spt-BR!2sbr!4v1446208413860" width="100%" height="350" frameborder="0" style="border:0" class="z-depth-3" allowfullscreen></iframe>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="chip chip-custom">
+                            Av. Bahia, 1739 - Indaia
+                            <i class="close material-icons">location_on</i>
+                        </div>
+                        <div class="chip chip-custom">
+                            Caraguatatuba
+                            <i class="close material-icons">location_on</i>
+                        </div>
+                        <div class="chip chip-custom">
+                            São Paulo
+                            <i class="close material-icons">location_on</i>
+                        </div>
+                        <div class="chip chip-custom">
+                            +55 (12)3885-2130
+                            <i class="close material-icons">call</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Formulário -->
+        <section class="contato grey darken-3 white-text">
+            <div class="container">
+                <div class="row">
+                   <div class="row">
+                        <h2 class="center-align">Fale Conosco</h2>
+                        <p class="flow-text center-align">Preencha o formulário para entrarmos em contato!</p>
+                    </div> 
+                </div>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last_name" type="text" class="validate">
+                                <label for="last_name">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Mensagem</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 center-align">
+                                <button type="submit" class="waves-effect waves-light btn btn-large"><i class="material-icons left">cloud</i>Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="page-footer rodape">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Nosso Empresa</h5>
+                        <p class="grey-text text-lighten-4">CNPJ 000.000.000/0001-00</p>
+                        <p class="grey-text text-lighten-4">Horário Funcionamento: 8h00 - 18h00</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">Politicas de privacidade</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Quem somo</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Nossa Equipe</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Pagamentos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2014 Copyright Marilene & Denny
+                    <a class="grey-text text-lighten-4 right" href="#!">MD Virtual Academy</a>
+                </div>
+            </div>
+        </footer>
        
         <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -191,6 +308,12 @@
                 $(".dropdown-button").dropdown();
                 $(".button-collapse").sideNav();
                 $('.slider').slider();
+                var options = [
+                    {selector: '.servico', offset: 200, callback: 'Materialize.fadeInImage(".servico")' },
+                    {selector: '.equipe', offset: 200, callback: 'Materialize.fadeInImage(".equipe")' },   {selector: '.localizacao', offset: 200, callback: 'Materialize.fadeInImage(".localizacao")' },
+                    {selector: '.contato', offset: 200, callback: 'Materialize.fadeInImage(".contato")' },{selector: '.rodape', offset: 200, callback: 'Materialize.fadeInImage(".rodape")' },
+                ];
+                Materialize.scrollFire(options);
             });
         </script>
     </body>
